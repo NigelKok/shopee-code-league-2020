@@ -11,6 +11,10 @@ setModel: Basic sklearn model to use, no model arguments needed
 setParamGrid: The grid for GridSearchCV to iterate over, the logs should print 
 out the attributes that can be tweaked
 
+* Please remember to change setParamGrid if you change setModel, you can get 
+the list of attributes by instanting a model then calling get_params()
+eg. Ridge().get_params()
+
 setSteps: Set the steps to be used in the pipeline, default is just a scaler +
 model
 '''
